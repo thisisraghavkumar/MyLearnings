@@ -1,0 +1,9 @@
+1. To not make a decision is also a decision. It is not always necessary that we act on on the first signs or provocations. Sometimes it is better to sit quitely and see things unfold.
+
+2. Following the middle path. Life is most beautiful when we stay away from the extremes and take a path which can meander and change as time passes and new situations unfold.
+
+3. Being a leader is about telling the people what is to be done and then let them figure out how to do it. It requires having faith in the people you've hired and backing them when they are questioned.
+
+4. There is no one policy silver bullet. All philosophies of governance are made with the betterment of the public, however all of them suffer from one problem or other in turn causing suffering to the public. Therefore one must never rely on a single measure, but a suite of measures. These must include a primary measure which is intended to solve the problem, measures to evaluate the progress and perform adjustments with time, measures for exit when the problem has been solved or the solution has proven to be ineffective.
+
+5. In a parlamentary democracy it's not enough to be righteous and capable, you also need the necessary support to keep doing your job. Again, having the support is a part of the objective and never the whole. The primary aim of the objective should be the betterment of the socety, country and the world while maintaining power, keeping image, motivating the public and nurturing a second guard ancilliary concerns. They are ancilliary, not unnecessary or unimportant, all of them must go hand in hand with the main job. 
