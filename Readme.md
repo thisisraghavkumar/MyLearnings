@@ -4,22 +4,27 @@ This repository is a collection of my notes, lessons and summaries of various pi
 
 ## Project structure
 
+### Articles
+#### Art
+1. Rhyme and Metre in Hindi Poetry
 ### Books
 #### Technology
 #### History & Philosophy
 1. 1991 : How PV Narsimha Rao made history - Sanjaya Baru
+#### Business & Economy
+1. Stakeholder Capitalism - Klaus Schwab & Peter Vanham
 #### Economics
+### Papers
+#### Blockchain
+#### Quantum Computing
+#### Cryptography
+#### non-Technology
 ### Projects
 #### Blockchain
 1. Ethernaut - Ethereum CFT by OpenZepplin
 #### Quantum Computing
 #### Programming Languages
 #### Cryptography
-### Papers
-#### Blockchain
-#### Quantum Computing
-#### Cryptography
-#### non-Technology
 ### Talks
 #### Technology
 #### Non-Technology
