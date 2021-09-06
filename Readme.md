@@ -13,6 +13,8 @@ This repository is a collection of my notes, lessons and summaries of various pi
 1. 1991 : How PV Narsimha Rao made history - Sanjaya Baru
 #### Business & Economy
 1. Stakeholder Capitalism - Klaus Schwab & Peter Vanham
+2. Zero to One - Peter Thiel
+3. No Rules Rules - Reed Hastings & Erin Meyer
 #### Economics
 ### Papers
 #### Blockchain
