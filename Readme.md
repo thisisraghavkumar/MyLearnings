@@ -15,6 +15,7 @@ This repository is a collection of my notes, lessons and summaries of various pi
 1. Stakeholder Capitalism - Klaus Schwab & Peter Vanham
 2. Zero to One - Peter Thiel
 3. No Rules Rules - Reed Hastings & Erin Meyer
+4. Matchmakers - David S. Evans & Richard Schmalensee
 #### Economics
 ### Papers
 #### Blockchain
@@ -30,3 +31,4 @@ This repository is a collection of my notes, lessons and summaries of various pi
 ### Talks
 #### Technology
 #### Non-Technology
+1. Chirs Voss - Talks at Google
