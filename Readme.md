@@ -11,6 +11,7 @@ This repository is a collection of my notes, lessons and summaries of various pi
 #### Technology
 #### History & Philosophy
 1. 1991 : How PV Narsimha Rao made history - Sanjaya Baru
+2. Ikigai - Hector Gracia & Francesc Miralles
 #### Business & Economy
 1. Stakeholder Capitalism - Klaus Schwab & Peter Vanham
 2. Zero to One - Peter Thiel

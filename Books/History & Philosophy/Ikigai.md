@@ -1,0 +1,5 @@
+1. Accept your feelings. Obsessing over bad things will only cause them to return again and again in your life. It's weird that if you keep obsessing over your desires, they may never come true, but if you keep obsessing over the bad things they keep showing up. I heard a similar advice a couple of days ago where the orator was arguing that it is not good to keep analyzing and expounding the negative things about your life, you don't keep analyzing and describing your diaorreha to everyone except once to your doctor. Feelings come and go, no one can control them. So let that be like that, if you felt something you believe you should not have felt, it's okay. It came and it went, there is no point to keep thinking about it.
+2. We can't control our thoughts but we can control our actions. So how we act is 100% under our authority and hence our decisions are responsible for our actions, not the circumstances.
+3. Do yoga.
+4. Life's purpose is not created, it's found. And it might change time to time.
+5. Check out Morita therapy and Logotherapy.
