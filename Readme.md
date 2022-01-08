@@ -22,6 +22,7 @@ This repository is a collection of my notes, lessons and summaries of various pi
 #### Blockchain
 #### Quantum Computing
 #### Cryptography
+1. New Direction in Cryptography by Hellman and Diffie
 #### non-Technology
 ### Projects
 #### Blockchain
