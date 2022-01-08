@@ -53,3 +53,17 @@ It should take exponential time to compute D[k] from E[k].
 10. When we say a function is easy to compute we mean that it can be done in a reasonable time and space which grows polynommially with the size of inputs, but when we say that a related function is hard to compute then that means it will take an exponential number of steps which is dependent on the size of the input. So a function can be computed in ax time/space, where x is the size of input but calculating the inverse of this function will take pow(b,x) time/space.
 
 12. For a purely random mapping from {x} -> {y} where every x has uniform probability in {x} and the y that will be outputted for the x is also selected with a uniform probability from {y}. Since this mapping is random it is possible that the same y is selected for multiple x i.e. x[1], x[2],...x[k]. The probability that any y has k+1 preimages in {x} is given by pow(e,-1)/(k!) for k = 0,1,2.... This is a poisson distribution of random variable k and the expected value of k comes out to be 2. Since the lambda of this distribution is 1, shifted by 1 unit. That is to say, for a purely random mapping from {x} -> {y}, every y is expected to have two pre images in {x}. Note that it is the expected number of pre-images and not fixed.
+
+13. Problems that can be solved by a deterministic machine in polynomial time are called P problems.
+
+14. Problems that can be solved by a non-deterministic machine (infinite paraller threads) in polynomial time are called NP problems.
+
+15. P is a subset of NP.
+
+16. Karp identified a subset of NP problems in which if any one of the problems is found to be solvable in polynomial time by a deterministic machine, then all NP problems will be solvable in polynomial time on a deterministic machine i.e. we will prove NP == P.
+
+17. There are 21 NP-Complete problems documented by Karp e.g. Travelling Salesman Problem, Knapsack problem etc.
+
+18. If E and D are solvable in polynomial time on a deterministic machine then the cryptanalysis is possible in polynomial time on a machine with infinite parallel threads i.e. a non-deterministic machine.
+
+19.  The cryptanalytic difficulty of a system whose encryption and decryption operations can be done in P time cannot be greater than NP.
