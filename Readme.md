@@ -34,3 +34,7 @@ This repository is a collection of my notes, lessons and summaries of various pi
 #### Technology
 #### Non-Technology
 1. Chirs Voss - Talks at Google
+### Courses
+#### MIT OCW 6.875 - Cryptography
+1. Lecture 1
+#### SOLID Principles
