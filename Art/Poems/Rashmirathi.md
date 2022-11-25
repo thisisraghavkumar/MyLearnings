@@ -2,7 +2,7 @@
 
 ## Chapter 2
 
-`Parshuram laments about the state of scholars in the day and age ann their conflict with the ruling classes.`
+`Parshuram laments about the powerless state of scholars during that time and his conflict with the warrior class.`
 
 खड्ग बड़ा उद्यत होता है, उद्यत होते हैं राजे, (The sword is very industrious, and so are the kings)
 
