@@ -7,6 +7,8 @@ This repository is a collection of my notes, lessons and summaries of various pi
 ### Articles
 #### Art
 1. Rhyme and Metre in Hindi Poetry
+#### Computers
+1. Zero Trust Security in Software Development
 ### Books
 #### Technology
 #### History & Philosophy
@@ -23,7 +25,7 @@ This repository is a collection of my notes, lessons and summaries of various pi
 #### Quantum Computing
 #### Cryptography
 1. New Direction in Cryptography by Hellman and Diffie
-#### non-Technology
+#### Non-Technology
 ### Projects
 #### Blockchain
 1. Ethernaut - Ethereum CFT by OpenZepplin

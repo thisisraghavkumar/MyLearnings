@@ -1,0 +1,4 @@
+1. ML systems need data, and like all raw material it costs money. So look at ROI, what sort of data makes sense. Data can be needed for statistical reasons - to make the prediction machine better, or for business reasons - to serve a new niche. - 26 Nov, 2024
+2. Machine Learning can capture relationship between features that human might miss. But, this is a double edged sword as ML may mistake correlation for causation. Yet, wit that caveat in mind ML systems can show unseen relationships. - 28 Nov, 2024
+3. Prediction machines scale well when there is ample data, however from time to time exceptional situations may arise when humans may make better decisions.
+4. Prediction machine adding input to human decision making has shown advantage over human decision making without machines.
