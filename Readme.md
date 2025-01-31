@@ -39,4 +39,6 @@ This repository is a collection of my notes, lessons and summaries of various pi
 ### Courses
 #### MIT OCW 6.875 - Cryptography
 1. Lecture 1
+#### PSU CSE 597-8 - Introduction to Deep Neural Networks
+1. Comparison between Stochastic Gradient Descent and SVM as classifiers and Kernel and Kernel approximation for generalisation error
 #### SOLID Principles
