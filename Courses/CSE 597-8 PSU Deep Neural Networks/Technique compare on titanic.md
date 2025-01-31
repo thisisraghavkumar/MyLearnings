@@ -304,6 +304,8 @@ plt.show()
     
 
 
+# My(R) conversation with ChatGPT 4o (C)
+
 R: Based on the output graph, that I have attached, I make the following comments
 
 1. As SVM with RBF kernel approximation has lower generalisation error than SGD with RBF kernel approximation, maybe one should prefer SVM over SGD for classification
@@ -398,3 +400,8 @@ Your observations are insightful, but they could be further strengthened by:
 	2.	Testing different hyperparameters: Particularly for SGD learning rates, RBF kernel parameters, and projection dimensions.
 	3.	Running multiple experiments: Use cross-validation or bootstrapping to validate that the trends hold across different data splits.
 	4.	Exploring the randomness effect in Gaussian Projections: Does increasing the projection dimension (D) make it even closer to RBF approximation?
+
+
+```python
+
+```
