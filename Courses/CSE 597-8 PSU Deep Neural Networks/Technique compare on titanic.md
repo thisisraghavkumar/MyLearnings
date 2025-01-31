@@ -371,8 +371,10 @@ plt.show()
 ✔️ Valid Point: SVM generally achieves better generalization because it optimizes a margin-based objective rather than a direct loss function (like log loss in SGD). The dual formulation ensures an optimal solution under feasible computation.
 
 ❌ Missing Considerations:
-	•	Training Time Complexity: SVM training scales quadratically or cubically with dataset size, whereas SGD is much faster for large datasets (stochastic updates). If the dataset grows significantly, SGD-based methods might be necessary despite slightly worse generalization.
-	•	Regularization and Hyperparameters: SGD’s performance depends heavily on learning rate, batch size, and stopping criteria. Were these tuned optimally? If not, SGD’s true potential might not be realized.
+	
+  •	Training Time Complexity: SVM training scales quadratically or cubically with dataset size, whereas SGD is much faster for large datasets (stochastic updates). If the dataset grows significantly, SGD-based methods might be necessary despite slightly worse generalization.
+	
+  •	Regularization and Hyperparameters: SGD’s performance depends heavily on learning rate, batch size, and stopping criteria. Were these tuned optimally? If not, SGD’s true potential might not be realized.
 
 ➡️ Refinement: Your conclusion holds only if dataset size is moderate and SGD hyperparameters were optimized fairly. If dealing with large-scale data, the trade-off between speed vs. accuracy must be evaluated.
 
@@ -381,8 +383,10 @@ plt.show()
 ✔️ Valid Point: The RBF kernel creates a highly flexible decision boundary, often leading to the best generalization performance.
 
 ❌ Missing Considerations:
-	•	Sensitivity to Hyperparameters: RBF kernel performance is highly dependent on the choice of gamma (γ) and C. If tuned poorly, it can lead to overfitting (high γ) or underfitting (low γ). Were these hyperparameters tuned fairly across methods?
-	•	Memory & Scalability Issues: Since SVMs with RBF kernels require storing and computing kernel matrices, this can become infeasible for large datasets. A direct linear model with kernel approximations may be preferable in such cases.
+	
+  •	Sensitivity to Hyperparameters: RBF kernel performance is highly dependent on the choice of gamma (γ) and C. If tuned poorly, it can lead to overfitting (high γ) or underfitting (low γ). Were these hyperparameters tuned fairly across methods?
+	
+  •	Memory & Scalability Issues: Since SVMs with RBF kernels require storing and computing kernel matrices, this can become infeasible for large datasets. A direct linear model with kernel approximations may be preferable in such cases.
 
 ➡️ Refinement: Instead of a blanket statement, the choice should depend on computational feasibility, dataset size, and hyperparameter tuning fairness.
 
@@ -391,8 +395,10 @@ plt.show()
 ✔️ Valid Point: Gaussian Projection can be computationally cheaper than explicit kernel approximation and still yield reasonable generalization performance.
 
 ❌ Missing Considerations:
-	•	Theoretical Difference: While both methods expand the feature space, Gaussian projection does not explicitly approximate a kernel function, whereas RBF approximation explicitly mimics the behavior of an RBF kernel. Their similarity in results might be dataset-dependent, and a more diverse range of datasets should be tested before generalizing this claim.
-	•	Stability Across Different Dimensions: How does Gaussian Projection’s performance vary with different projection dimensions (D)? If you vary D (e.g., project to 100D, 500D), does it still match the kernel approximation method?
+	
+  •	Theoretical Difference: While both methods expand the feature space, Gaussian projection does not explicitly approximate a kernel function, whereas RBF approximation explicitly mimics the behavior of an RBF kernel. Their similarity in results might be dataset-dependent, and a more diverse range of datasets should be tested before generalizing this claim.
+	
+  •	Stability Across Different Dimensions: How does Gaussian Projection’s performance vary with different projection dimensions (D)? If you vary D (e.g., project to 100D, 500D), does it still match the kernel approximation method?
 
 ➡️ Refinement: This observation should be stated with a conditional caveat—“On this dataset, Gaussian Projection performed similarly to RBF approximation, but further experiments are needed to validate whether this holds in general.” Testing with different values of D would strengthen the claim.
 
@@ -401,9 +407,12 @@ plt.show()
 ✔️ Valid Point: In some cases, adding randomness or noise helps generalization (similar to how dropout prevents overfitting in deep learning).
 
 ❌ Alternative Explanations to Consider:
-	•	Evaluation Variability: Could this be due to random splits of training vs. test data? If the test set happens to be slightly “easier” than the training set, this effect might arise artificially. Running multiple train-test splits would help verify if this effect holds consistently.
-	•	Implicit Regularization Effect: Gaussian Projections might be introducing a smoothing effect that prevents overfitting. This is worth testing explicitly by adding controlled Gaussian noise to other models and checking if generalization improves.
-	•	Empirical Risk Minimization vs. True Risk: Generalization error should be bounded by training error + complexity term. If test error < train error, maybe the training error estimate is slightly biased due to how stochastic optimization behaved (SGD might not have fully converged).
+	
+  •	Evaluation Variability: Could this be due to random splits of training vs. test data? If the test set happens to be slightly “easier” than the training set, this effect might arise artificially. Running multiple train-test splits would help verify if this effect holds consistently.
+	
+  •	Implicit Regularization Effect: Gaussian Projections might be introducing a smoothing effect that prevents overfitting. This is worth testing explicitly by adding controlled Gaussian noise to other models and checking if generalization improves.
+	
+  •	Empirical Risk Minimization vs. True Risk: Generalization error should be bounded by training error + complexity term. If test error < train error, maybe the training error estimate is slightly biased due to how stochastic optimization behaved (SGD might not have fully converged).
 
 ➡️ Refinement: A statistical validation would help solidify this claim—testing different random seeds, bootstrapping train-test splits, and varying the Gaussian projection parameters would clarify whether this is a real effect or an artifact.
 
