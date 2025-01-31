@@ -306,44 +306,54 @@ plt.show()
 
 # My(R) conversation with ChatGPT 4o (C)
 
-R: Based on the output graph, that I have attached, I make the following comments
+## R: Based on the output graph, that I have attached, I make the following comments
 
 1. As SVM with RBF kernel approximation has lower generalisation error than SGD with RBF kernel approximation, maybe one should prefer SVM over SGD for classification
 2. SVM with RBF kernel has the best performance and thus must be preferred over any other technique, given calulating the kernel function for all pairs of training data is feasible
 3. SGD on Gaussian Projection has roughly the same generalisation error as SVM on RBF approximation. In their equation they differ by a sinusoidal function and a bias term. So, maybe when data is huge, I can get away with doing a gaussian projection (a mat mul) instead of actually going out and finding the RBF approximation.
 4. Test error can at most be training error plus a factor that is directly proportional to complexity of model and inversely proportional to the number of training examples. In case of gaussian transformation, the generalisation error is lower than training error. Does this mean that adding Gaussian noise is so effetive that it mitigates the lesser optimization during empirical risk minimization, when it is predicting over unseen data?
 
-C: Your comments are quite insightful, and I’ll address each one systematically:
+## C: Your comments are quite insightful, and I’ll address each one systematically:
 
 ### 1️⃣ SVM with RBF kernel approximation vs. SGD with RBF approximation
 
 ✔️ Observation: SVM with RBF approximation performs better (lower generalization error) than SGD with RBF approximation.
+
 ✔️ Reason: The key reason behind this is that SVM optimizes a margin-based objective in the dual space, whereas SGD optimizes a primal loss function like hinge loss or log loss. The optimization strategies are different:
+
 	•	SVM finds a global optimum using convex quadratic programming.
 	•	SGD uses online updates, which means it may not reach the global optimum but scales better with massive datasets.
+
 ✔️ Conclusion: If computational resources allow and dataset size is moderate, prefer SVM over SGD for classification when using RBF-based features.
 
 ### 2️⃣ SVM with RBF kernel performs the best
 
 ✔️ Observation: SVM with RBF kernel has the lowest generalization error, meaning it best balances bias-variance tradeoff.
+
 ✔️ Reason:
 	•	RBF kernel projects the data into infinite-dimensional space, allowing a more flexible decision boundary than a linear classifier.
 	•	SVM maximizes the margin, leading to better generalization.
+
 ✔️ Conclusion: If computing pairwise kernel values is feasible, RBF-SVM should be the preferred technique. Otherwise, we need approximations (like Fourier features or Gaussian projections) for scalability.
 
 ### 3️⃣ Gaussian Projection (SGD) ≈ RBF Approximation (SVM)
 
 ✔️ Observation: SGD on Gaussian Projection has a similar generalization error to SVM on RBF approximation.
+
 ✔️ Reason: The random Gaussian projection transforms data to a higher-dimensional space, just like RBF features, but without explicitly approximating the RBF kernel function. The key difference is that Gaussian projections use random basis vectors, whereas RBF kernel approximations use sinusoidal functions (via Fourier transform).
+
 ✔️ Conclusion: If the dataset is large, Gaussian Projection (simple matrix multiplication) is computationally cheaper than full RBF kernel approximation, making it a good alternative in practice.
 
 ### 4️⃣ Generalization Error < Training Error for Gaussian Projection
 
 ✔️ Observation: For Gaussian Projection (SGD), the test error is lower than the training error, which contradicts the typical generalization bound (test error should be higher than training error due to overfitting risk).
+
 ✔️ Possible Reasons:
+
 	1.	Gaussian noise regularization effect: The random projection may introduce implicit regularization, similar to dropout in deep learning. This reduces variance and improves generalization.
 	2.	Optimization artifacts: SGD does not always converge to a perfect minimum, and since training error is computed on empirical risk minimization (ERM), it may appear higher than test error in some cases due to optimization noise.
 	3.	Data Splitting Artifacts: If the test set has an easier distribution than the training set, this effect can emerge.
+
 ✔️ Conclusion: Adding Gaussian noise can improve generalization, potentially mitigating poor optimization. This suggests that Gaussian projections may act as an implicit form of regularization, making the model more robust.
 
 ## Final Takeaways
@@ -352,9 +362,9 @@ C: Your comments are quite insightful, and I’ll address each one systematicall
 	3.	Gaussian projections can be a computationally efficient trick for large datasets, offering a potential alternative to expensive kernel methods.
 	4.	Random Gaussian projection may introduce implicit regularization, explaining why test error is lower than training error in some cases.
 
-R: What is your critique of these observations? Do these observations miss some point, or do I need to give more concrete context of parameters under which these observations were made? I want to know your thoughts
+## R: What is your critique of these observations? Do these observations miss some point, or do I need to give more concrete context of parameters under which these observations were made? I want to know your thoughts
 
-C: Your observations are well-reasoned and insightful, but here’s a critical analysis of where they could be improved or refined:
+## C: Your observations are well-reasoned and insightful, but here’s a critical analysis of where they could be improved or refined:
 
 ### 1️⃣ “SVM with RBF approximation has lower generalization error than SGD with RBF approximation, so SVM should be preferred.”
 
