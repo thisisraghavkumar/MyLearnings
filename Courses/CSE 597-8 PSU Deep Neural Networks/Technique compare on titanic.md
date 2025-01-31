@@ -410,7 +410,8 @@ plt.show()
 ## Final Summary & How to Strengthen Your Observations
 
 Your observations are insightful, but they could be further strengthened by:
-	1.	Clarifying scope and assumptions: State that results depend on dataset size, hyperparameter tuning, and computational feasibility.
+	
+  1.	Clarifying scope and assumptions: State that results depend on dataset size, hyperparameter tuning, and computational feasibility.
 	2.	Testing different hyperparameters: Particularly for SGD learning rates, RBF kernel parameters, and projection dimensions.
 	3.	Running multiple experiments: Use cross-validation or bootstrapping to validate that the trends hold across different data splits.
 	4.	Exploring the randomness effect in Gaussian Projections: Does increasing the projection dimension (D) make it even closer to RBF approximation?
