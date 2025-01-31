@@ -369,6 +369,7 @@ plt.show()
 ### 1️⃣ “SVM with RBF approximation has lower generalization error than SGD with RBF approximation, so SVM should be preferred.”
 
 ✔️ Valid Point: SVM generally achieves better generalization because it optimizes a margin-based objective rather than a direct loss function (like log loss in SGD). The dual formulation ensures an optimal solution under feasible computation.
+
 ❌ Missing Considerations:
 	•	Training Time Complexity: SVM training scales quadratically or cubically with dataset size, whereas SGD is much faster for large datasets (stochastic updates). If the dataset grows significantly, SGD-based methods might be necessary despite slightly worse generalization.
 	•	Regularization and Hyperparameters: SGD’s performance depends heavily on learning rate, batch size, and stopping criteria. Were these tuned optimally? If not, SGD’s true potential might not be realized.
@@ -378,6 +379,7 @@ plt.show()
 ### 2️⃣ “SVM with RBF kernel has the best performance, so it should always be preferred if feasible.”
 
 ✔️ Valid Point: The RBF kernel creates a highly flexible decision boundary, often leading to the best generalization performance.
+
 ❌ Missing Considerations:
 	•	Sensitivity to Hyperparameters: RBF kernel performance is highly dependent on the choice of gamma (γ) and C. If tuned poorly, it can lead to overfitting (high γ) or underfitting (low γ). Were these hyperparameters tuned fairly across methods?
 	•	Memory & Scalability Issues: Since SVMs with RBF kernels require storing and computing kernel matrices, this can become infeasible for large datasets. A direct linear model with kernel approximations may be preferable in such cases.
@@ -387,6 +389,7 @@ plt.show()
 ### 3️⃣ “SGD on Gaussian Projection performs similarly to SVM on RBF approximation, so Gaussian Projection could replace RBF approximation in large-scale settings.”
 
 ✔️ Valid Point: Gaussian Projection can be computationally cheaper than explicit kernel approximation and still yield reasonable generalization performance.
+
 ❌ Missing Considerations:
 	•	Theoretical Difference: While both methods expand the feature space, Gaussian projection does not explicitly approximate a kernel function, whereas RBF approximation explicitly mimics the behavior of an RBF kernel. Their similarity in results might be dataset-dependent, and a more diverse range of datasets should be tested before generalizing this claim.
 	•	Stability Across Different Dimensions: How does Gaussian Projection’s performance vary with different projection dimensions (D)? If you vary D (e.g., project to 100D, 500D), does it still match the kernel approximation method?
@@ -396,6 +399,7 @@ plt.show()
 ### 4️⃣ “Generalization error is lower than training error for Gaussian Projection. Does this mean Gaussian noise mitigates poor optimization?”
 
 ✔️ Valid Point: In some cases, adding randomness or noise helps generalization (similar to how dropout prevents overfitting in deep learning).
+
 ❌ Alternative Explanations to Consider:
 	•	Evaluation Variability: Could this be due to random splits of training vs. test data? If the test set happens to be slightly “easier” than the training set, this effect might arise artificially. Running multiple train-test splits would help verify if this effect holds consistently.
 	•	Implicit Regularization Effect: Gaussian Projections might be introducing a smoothing effect that prevents overfitting. This is worth testing explicitly by adding controlled Gaussian noise to other models and checking if generalization improves.
@@ -410,8 +414,3 @@ Your observations are insightful, but they could be further strengthened by:
 	2.	Testing different hyperparameters: Particularly for SGD learning rates, RBF kernel parameters, and projection dimensions.
 	3.	Running multiple experiments: Use cross-validation or bootstrapping to validate that the trends hold across different data splits.
 	4.	Exploring the randomness effect in Gaussian Projections: Does increasing the projection dimension (D) make it even closer to RBF approximation?
-
-
-```python
-
-```
