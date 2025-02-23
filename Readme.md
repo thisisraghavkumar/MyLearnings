@@ -34,6 +34,7 @@ This repository is a collection of my notes, lessons and summaries of various pi
 #### PSU CSE 597-8 - Introduction to Deep Neural Networks
 1. Comparison between Stochastic Gradient Descent and SVM as classifiers and Kernel and Kernel approximation for generalisation error
 #### PSU CSE 597-7 - Security Analysis of Emerging Systems
-1. How can we algorithmically detect unexpected states of systems built on Cardano?
+1. Research proposal
+2. Presentation 1 - an overview of eUTxO and transactions; VaccumLabs CTF; A high level views of issues; What can we do; Related works
 #### SOLID Principles
 1. Notes
