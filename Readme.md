@@ -4,9 +4,9 @@ This repository is a collection of my notes, lessons and summaries of various pi
 
 ## Table of content
 
-1. [Rhyme and Metre in Hindi Poetry](/Articles//Art/Hindi%20Poetry.md)
-2. [Zero Trust Security in Software Development](/Articles/Computers/Zero%20Trust%20Security%20in%20Software%20Development.md)
-3. [1991 : How PV Narsimha Rao made history - Sanjaya Baru](/Books/History%20&%20Philosophy/1991%20How%20PV%20Narsimha%20Rao%20Made%20History.md)
+1. [Rhyme and Metre in Hindi Poetry](./Articles//Art/Hindi%20Poetry.md)
+2. [Zero Trust Security in Software Development](./Articles/Computers/Zero%20Trust%20Security%20in%20Software%20Development.md)
+3. [1991 : How PV Narsimha Rao made history - Sanjaya Baru](./Books/History%20&%20Philosophy/1991%20How%20PV%20Narsimha%20Rao%20Made%20History.md)
 4. [Ikigai - Hector Gracia & Francesc Miralles](/Books/History%20&%20Philosophy/Ikigai.md)
 5. [Stakeholder Capitalism - Klaus Schwab & Peter Vanham](/Books/Economy%20&%20Business/Stakeholder%20Capitalism.md)
 6. [Zero to One - Peter Thiel](/Books/Economy%20&%20Business/Zero%20to%20One.md)
