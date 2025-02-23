@@ -10,7 +10,6 @@ This repository is a collection of my notes, lessons and summaries of various pi
 #### Computers
 1. Zero Trust Security in Software Development
 ### Books
-#### Technology
 #### History & Philosophy
 1. 1991 : How PV Narsimha Rao made history - Sanjaya Baru
 2. Ikigai - Hector Gracia & Francesc Miralles
@@ -19,21 +18,14 @@ This repository is a collection of my notes, lessons and summaries of various pi
 2. Zero to One - Peter Thiel
 3. No Rules Rules - Reed Hastings & Erin Meyer
 4. Matchmakers - David S. Evans & Richard Schmalensee
-#### Economics
 ### Papers
-#### Blockchain
-#### Quantum Computing
 #### Cryptography
 1. New Direction in Cryptography by Hellman and Diffie
-#### Non-Technology
 ### Projects
 #### Blockchain
 1. Ethernaut - Ethereum CFT by OpenZepplin
-#### Quantum Computing
-#### Programming Languages
-#### Cryptography
+
 ### Talks
-#### Technology
 #### Non-Technology
 1. Chirs Voss - Talks at Google
 ### Courses
@@ -41,4 +33,7 @@ This repository is a collection of my notes, lessons and summaries of various pi
 1. Lecture 1
 #### PSU CSE 597-8 - Introduction to Deep Neural Networks
 1. Comparison between Stochastic Gradient Descent and SVM as classifiers and Kernel and Kernel approximation for generalisation error
+#### PSU CSE 597-7 - Security Analysis of Emerging Systems
+1. How can we algorithmically detect unexpected states of systems built on Cardano?
 #### SOLID Principles
+1. Notes
