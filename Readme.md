@@ -17,6 +17,6 @@ This repository is a collection of my notes, lessons and summaries of various pi
 11. [Chirs Voss - Talks at Google](./Talks/Non-Technology/Chris%20Voss%20-%20Talks%20at%20Google)
 12. [Lecture 1](./Courses/MIT%20OCW%206.875%20Cryptography/Lecture%201)
 13. [Comparison between Stochastic Gradient Descent and SVM as classifiers and Kernel and Kernel approximation for generalisation error](./Courses/CSE%20597-8%20PSU%20Deep%20Neural%20Networks/Technique%20compare%20on%20titanic)
-14. [Vulnerabilities in Cardano Smart Contracts Research proposal](./Courses/CSE%20597-7%20PSU%20Sec%20Analysis%20of%20Emerging%20Systems/Research_Proposal)
+14. [Vulnerabilities in Cardano Smart Contracts Research proposal](./Courses/CSE%20597-7%20PSU%20Sec%20Analysis%20of%20Emerging%20Systems/Research_Proposal.pdf)
 15. [Vulnerabilities in Cardano Smart Contracts Presentation 1](./Courses/CSE%20597-7%20PSU%20Sec%20Analysis%20of%20Emerging%20Systems/Presentation%201.pdf) - an overview of eUTxO and transactions; VaccumLabs CTF; A high level views of issues; What can we do; Related works
 16. [Notes on SOLID Principles](./Courses/SOLID%20Principles)
